@@ -10,9 +10,10 @@
 
 body {
   background: $primary-background-color;
+  margin: 10px;
 }
 
 .container {
-  width: 600px;
+  max-width: 600px;
   margin: 50px auto;
 }
