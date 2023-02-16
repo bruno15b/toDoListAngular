@@ -7,7 +7,7 @@ li {
 div {
   width: 100%;
   height: max-content;
-  background: $secondary-background-color;
+  background: $primary-color;
   margin-top: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 
@@ -25,18 +25,22 @@ div {
       justify-content: space-between;
       align-items: center;
       margin-bottom: 10px;
+
       input {
         &.input-text {
           flex-grow: 1;
           padding: 5px 10px;
           border: none;
           font-size: 1rem;
-          color: $primary-text-color;
-          background: rgb(255, 254, 254);
+          background: $primary-color;
+          color: $secondary-color;
           &.checked {
             text-decoration: line-through;
           }
         }
+      }
+      input::placeholder {
+        color: $secondary-color;
       }
       button {
         background: none;
@@ -50,4 +54,10 @@ div {
       }
     }
   }
+}
+
+app-todo-input-add-itens,
+app-todo-button-delete-all {
+  display: flex;
+  justify-content: center;
 }

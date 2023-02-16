@@ -1,0 +1,17 @@
+@import "../../../../../dist/scss/variables.scss";
+
+input {
+  position: relative;
+  top: -15px;
+  width: 90%;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  background: $tertiary-color;
+  color: $secondary-color;
+  outline: none;
+}
+
+input::placeholder {
+  color: $secondary-color;
+}

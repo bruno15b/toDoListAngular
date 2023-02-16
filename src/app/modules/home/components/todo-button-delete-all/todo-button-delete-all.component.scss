@@ -1,0 +1,10 @@
+@import "../../../../../dist/scss/variables.scss";
+
+button {
+  background: $danger-color;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  color: #1e2024;
+  cursor: pointer;
+}
