@@ -6,7 +6,7 @@ li {
 
 div {
   width: 100%;
-  height: max-content;
+  min-height: 400px;
   background: $primary-color;
   margin-top: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
@@ -14,7 +14,7 @@ div {
   &.loading {
     background-image: url("../../../../../assets/img/bg-task.png");
     background-repeat: no-repeat;
-    background-position: center 30px;
+    background-position: center;
   }
 
   ul {

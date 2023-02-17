@@ -7,6 +7,7 @@ import { TodoInputAddItensComponent } from './components/todo-input-add-itens/to
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 
 import { HomeComponent } from './pages/home/home.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,6 @@ import { HomeComponent } from './pages/home/home.component';
     TodoListComponent,
     HomeComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
 })
 export class HomeModule {}
