@@ -1,11 +1,16 @@
 @import "../../../../../dist/scss/variables.scss";
 
+:host {
+  position: relative;
+}
+
 input {
   position: relative;
   top: -15px;
   width: 90%;
   text-align: center;
   padding: 10px;
+  padding-right: 70px;
   border: none;
   background: $tertiary-color;
   color: $secondary-color;
@@ -14,4 +19,20 @@ input {
 
 input::placeholder {
   color: $secondary-color;
+}
+
+.add-task-confirm {
+  position: absolute;
+  right: 10px;
+  bottom: 21px;
+  padding: 5px;
+  background: rgb(73, 189, 62);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 5px;
 }

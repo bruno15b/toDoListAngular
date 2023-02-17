@@ -24,4 +24,11 @@ export class TodoListComponent {
       if (confirm) this.taskList = [];
     }
   }
+
+  public setEmitTaskList(itemTaskList: string) {
+    itemTaskList = itemTaskList.trim();
+    if (itemTaskList) {
+      this.taskList.push({ taskInfo: itemTaskList, checkedTask: false });
+    }
+  }
 }
